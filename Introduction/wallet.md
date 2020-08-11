@@ -7,7 +7,7 @@ Decred官方CLI钱包主要程序为dcrd、dcrwallet、dcrcli、dcrlnd 和dcrlnc
 
 所有新版本和历史版本均可以在此下载 [Github下载](https://github.com/decred/decred-binaries/releases)
 
-#### 图形客户端（Decrediton）
+#### PC图形客户端（Decrediton）
 > decrediton-v1.5.1.exe <img width="20" src="./wallet/win.svg">
 [下载地址](https://github.com/decred/decred-binaries/releases/download/v1.5.1/decrediton-v1.5.1.exe)
 
@@ -17,7 +17,7 @@ Decred官方CLI钱包主要程序为dcrd、dcrwallet、dcrcli、dcrlnd 和dcrlnc
 > decrediton-v1.5.1.tar.gz <img width="20" src="./wallet/linux.svg">
 [下载地址](https://github.com/decred/decred-binaries/releases/download/v1.5.1/decrediton-v1.5.1.tar.gz)
 
-#### 命令行客户端（dcrd dcrwallet dcrcli dcrlnd dcrlncli等）
+#### 命令行客户端（适用于x86 x64 ARM64架构）
 > decred-windows-386 <img width="20" src="./wallet/win.svg">
 [下载地址](https://github.com/decred/decred-binaries/releases/download/v1.5.1/decred-windows-386-v1.5.1.zip)
 
