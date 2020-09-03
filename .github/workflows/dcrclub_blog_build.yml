@@ -29,7 +29,9 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
-          sudo -E apt list --installed
+          sudo -E nvm version
+          sudo rm -rf /usr/share/dotnet /etc/mysql /etc/php /etc/apt/sources.list.d
+          sudo -E apt-get -y purge azure-cli ghc* zulu* hhvm llvm* firefox google* dotnet* powershell openjdk* mysql* php* android*
           sudo -E apt-get autoremove
           sudo -E curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
           sudo -E apt-get update
