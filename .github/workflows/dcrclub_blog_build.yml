@@ -29,9 +29,11 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
-          sudo -E which npm
-          sudo rm -rf /usr/share/dotnet /etc/mysql /etc/php /etc/apt/sources.list.d
-          sudo -E apt-get -y purge azure-cli ghc* zulu* hhvm llvm* firefox google* dotnet* powershell openjdk* mysql* php* android*
+          sudo -E npm uninstall npm -g
+          sudo rm -r /usr/local/bin/npm 2>/dev/null
+          sudo rm -r /usr/local/lib/node-moudels 2>/dev/null
+          sudo find / -name npm
+          sudo rm -r /tmp/npm* 
           sudo -E apt-get autoremove
           sudo -E curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
           sudo -E apt-get update
