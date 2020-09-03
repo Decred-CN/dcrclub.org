@@ -19,7 +19,7 @@ jobs:
 
     steps:
 
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v2
         with:
           repository: 'Decred-CN/dcrclub.org'
@@ -31,7 +31,7 @@ jobs:
         run: |
           docker rmi `docker images -q`
           sudo -E apt-get update
-          sudo -E apt-get -y nodejs npm
+          sudo -E apt-get -y install nodejs npm
           npm install -g gitbook-cli
 
       - name: Compile gitbook
