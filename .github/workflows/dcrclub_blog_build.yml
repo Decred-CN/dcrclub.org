@@ -32,12 +32,14 @@ jobs:
           sudo -E apt-get update
           sudo -E apt-get -y install nodejs npm
           sudo npm install -g gitbook-cli
+          gitbook -V
 
       - name: Compile gitbook
         run: |
           ls -alt
-          sudo -E gitbook init
-          sudo -E gitbook build
+          gitbook init
+          gitbook install
+          gitbook build
           
       - name: Prepare artifact
         run: |
