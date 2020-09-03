@@ -29,6 +29,8 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
+          sudo -E npm version
+          sudo -E npm cache clean --force
           sudo -E npm install -g gitbook-cli
           gitbook -V
 
