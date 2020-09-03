@@ -32,7 +32,6 @@ jobs:
           curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
           sudo -E apt-get update
           sudo -E apt-get install -y nodejs
-          sudo -E nodejs -v
           sudo -E npm install -g gitbook-cli
           gitbook -V
 
