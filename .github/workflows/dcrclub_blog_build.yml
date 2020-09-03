@@ -1,3 +1,4 @@
+#20200903
 name: dcrclub_blog_build
 on:
   push:
