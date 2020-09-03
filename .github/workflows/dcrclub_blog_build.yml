@@ -30,8 +30,7 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
         run: |
           sudo -E npm uninstall npm -g
-          sudo rm -r /usr/local/bin/npm 2>/dev/null
-          sudo rm -r /usr/local/lib/node-moudels 2>/dev/null
+          sudo rm -r /usr/local/bin/npm
           sudo find / -name npm
           sudo rm -r /tmp/npm* 
           sudo -E apt-get autoremove
