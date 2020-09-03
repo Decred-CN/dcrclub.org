@@ -29,8 +29,11 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
+          sudo -E docker rmi `docker images -q`
           sudo -E npm uninstall npm -g
-          sudo rm -f /usr/local/bin/npm
+          sudo rm -rf /usr/local/bin/npm
+          sudo rm -rf /usr/local/n
+          sudo rm -rf /usr/local/lib/node_modules
           sudo find / -name npm
           sudo -E apt-get autoremove
           sudo -E curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
