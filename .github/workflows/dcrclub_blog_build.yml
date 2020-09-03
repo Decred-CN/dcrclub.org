@@ -29,6 +29,7 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
+          ls -alt
           sudo -E apt-get update
           sudo -E apt-get autoremove nodejs npm
           sudo -E curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
