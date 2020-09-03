@@ -29,8 +29,10 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
-          sudo -E npm version
           sudo -E npm cache clean --force
+          sudo -E apt-get -y purge node nodejs npm
+          sudo -E curl -sL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+          sudo -E apt-get install -y nodejs
           sudo -E npm install -g gitbook-cli
           gitbook -V
 
