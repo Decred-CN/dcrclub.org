@@ -19,23 +19,19 @@ jobs:
 
     steps:
 
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v2
         with:
           repository: 'Decred-CN/dcrclub.org'
           ref: master
 
-      - name: Space cleanup
+      - name: Prepare Basic Environment
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
           docker rmi `docker images -q`
-          sudo rm -rf /usr/share/dotnet /etc/mysql /etc/php /etc/apt/sources.list.d
-          sudo -E apt-get -y purge azure-cli ghc* zulu* hhvm llvm* firefox google* dotnet* powershell openjdk* mysql* php* android*
           sudo -E apt-get update
           sudo -E apt-get -y nodejs npm
-          sudo -E apt-get -y autoremove --purge
-          sudo -E apt-get clean
           npm install -g gitbook-cli
 
       - name: Compile gitbook
