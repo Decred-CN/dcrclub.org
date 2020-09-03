@@ -31,7 +31,7 @@ jobs:
         run: |
           sudo -E apt-get update
           sudo -E apt-get -y install nodejs npm git
-          sudo npm install -g gitbook-cli
+          sudo -E npm install -g gitbook-cli
           gitbook -V
 
       - name: Compile gitbook
@@ -44,7 +44,7 @@ jobs:
       - name: Prepare artifact
         run: |
           mkdir -p ./artifact/www
-          mv _html ./artifact/www/
+          mv _book ./artifact/www
 
       - name: Deliver www
         uses: actions/upload-artifact@v2
