@@ -15,7 +15,7 @@ jobs:
 
     name: dcrclub_blog_build
 
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-20.04
 
     steps:
 
@@ -29,9 +29,7 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
-          sudo -E apt-get remove --purge npm
-          sudo -E apt-get remove --purge nodejs
-          sudo -E apt-get remove --purge nodejs-legacy
+          sudo -E apt-get list --installed
           sudo -E apt-get autoremove
           sudo -E curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
           sudo -E apt-get update
