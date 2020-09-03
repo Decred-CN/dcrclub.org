@@ -32,7 +32,7 @@ jobs:
           curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
           sudo -E apt-get update
           sudo -E apt-get install -y nodejs
-          sudo -E npm cache clean —force
+          sudo -E npm cache clean --force
           sudo -E npm install -g gitbook-cli
           gitbook -V
 
