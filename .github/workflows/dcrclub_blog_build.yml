@@ -36,8 +36,8 @@ jobs:
 
       - name: Compile gitbook
         run: |
-          gitbook init
-          gitbook build
+          sudo -E gitbook init
+          sudo -E gitbook build
           
       - name: Prepare artifact
         run: |
