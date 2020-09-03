@@ -30,8 +30,9 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
         run: |
           sudo -E apt-get update
-          sudo -E apt-get -y install nodejs npm git
           sudo -E apt-get autoremove
+          sudo curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+          sudo apt-get install -y nodejs
           sudo -E npm install -g gitbook-cli
           gitbook -V
 
