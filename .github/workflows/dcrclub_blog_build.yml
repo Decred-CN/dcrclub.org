@@ -29,9 +29,7 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
-          sudo sed -i 's/fs.stat = statFix(fs.stat)/\/\/ fs.stat = statFix(fs.stat)/g' /usr/local/lib/node_modules/gitbook-cli/node_modules/npm/node_modules/graceful-fs/polyfills.js
-          sudo sed -i 's/fs.fstat = statFix(fs.fstat)/\/\/ fs.fstat = statFix(fs.fstat)/g' /usr/local/lib/node_modules/gitbook-cli/node_modules/npm/node_modules/graceful-fs/polyfills.js
-          sudo sed -i 's/fs.lstat = statFix(fs.lstat)/\/\/ fs.lstat = statFix(fs.lstat)/g' /usr/local/lib/node_modules/gitbook-cli/node_modules/npm/node_modules/graceful-fs/polyfills.js
+          sudo -E apt-get upgrade -y
           sudo -E npm install -g gitbook-cli
           gitbook -V
 
