@@ -15,7 +15,7 @@ jobs:
 
     name: dcrclub_blog_build
 
-    runs-on: debian-latest
+    runs-on: 	ubuntu-20.04
 
     steps:
 
