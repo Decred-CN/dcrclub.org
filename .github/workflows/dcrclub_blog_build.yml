@@ -29,13 +29,13 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
-          docker rmi `docker images -q`
           sudo -E apt-get update
           sudo -E apt-get -y install nodejs npm
           sudo npm install -g gitbook-cli
 
       - name: Compile gitbook
         run: |
+          ls -alt
           sudo -E gitbook init
           sudo -E gitbook build
           
