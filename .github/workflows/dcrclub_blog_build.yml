@@ -30,7 +30,7 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
         run: |
           sudo -E apt-get update
-          sudo -E apt-get -y install nodejs npm
+          sudo -E apt-get -y install nodejs npm git
           sudo npm install -g gitbook-cli
           gitbook -V
 
