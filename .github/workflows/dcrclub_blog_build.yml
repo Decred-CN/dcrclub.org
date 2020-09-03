@@ -33,10 +33,6 @@ jobs:
           sudo -E apt-get remove --purge nodejs
           sudo -E apt-get remove --purge nodejs-legacy
           sudo -E apt-get autoremove
-          sudo -E rm -r /usr/local/bin/npm
-          sudo -E rm -r /usr/local/lib/node-moudels
-          sudo -E find / -name npm
-          sudo -E rm -r /tmp/npm* 
           sudo -E curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
           sudo -E apt-get update
           sudo -E apt-get install -y nodejs
