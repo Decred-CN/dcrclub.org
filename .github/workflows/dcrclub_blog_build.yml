@@ -30,9 +30,8 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
         run: |
           sudo -E npm uninstall npm -g
-          sudo rm -r /usr/local/bin/npm
+          sudo rm -f /usr/local/bin/npm
           sudo find / -name npm
-          sudo rm -r /tmp/npm* 
           sudo -E apt-get autoremove
           sudo -E curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
           sudo -E apt-get update
