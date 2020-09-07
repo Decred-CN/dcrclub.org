@@ -5,7 +5,7 @@
     "description" : "Decred项目中文社区",
     "language" : "zh-hans",
     "catalog": "all",
-    "plugins" : ["favicon","search-plus","-sharing", "sharing-plus","sitemap-general","theme-comscore","splitter"],
+    "plugins" : ["favicon","search-plus","-sharing", "sharing-plus","sitemap-general","theme-comscore","splitter","expandable-chapters"],
     "pluginsConfig": {
           "sharing": {
               "facebook": true,
