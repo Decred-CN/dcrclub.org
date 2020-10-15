@@ -43,4 +43,4 @@
   * [链上共识变更流程](Advanced/consensus_change.md)
   * [图解POS选票的生命周期](Advanced/vote_life_cycle.md)
   * [简单支付验证 SPV](Advanced/simplified_payment_verification.md)
-* [测评分析](Analysis/README.md)
+* [测评文章](Analysis/README.md)
