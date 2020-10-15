@@ -38,7 +38,7 @@
     * [使用自建VSP](Tutorial/pos_staking_with_selfbuilt_vsp.md)
     * [使用Solo模式投票](Tutorial/pos_staking_with_solo.md)
     * [使用分票购票](Tutorial/ticket_splitting.md)
-  * [注意事项](Tutorial/notice.md)
+  * [使用树莓派搭建全节点](Tutorial/fullnode_with_raspberry-pi.md)
 * [进阶](Advanced/README.md)
   * [链上共识变更流程](Advanced/consensus_change.md)
   * [图解POS选票的生命周期](Advanced/vote_life_cycle.md)
