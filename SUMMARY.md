@@ -4,7 +4,7 @@
   * [官方钱包](Introduction/wallet.md)
   * [第三方支持钱包](Introduction/thirdparty_wallet.md)
   * [交易所及换币平台](Introduction/exchange_platform.md)
-* [Decred月报](Journal/README.md)
+* [月报](Journal/README.md)
   * [2020年度]()
     * [2020年9月](Journal/202009_DecredJournalCN.md)
     * [2020年8月](Journal/202008_DecredJournalCN.md)
